@@ -3,8 +3,9 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/bazzite:stable
-#FROM ghcr.io/ublue-os/ucore-minimal
+# FROM ghcr.io/ublue-os/bazzite:stable
+FROM quay.io/fedora/fedora-coreos:stable
+# FROM ghcr.io/ublue-os/ucore-minimal
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
